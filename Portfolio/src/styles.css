@@ -1,1 +1,11 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ovo&display=swap');
+
+/* body{
+    font-family:'Outfit';
+} */
+
+a{
+    font-family: 'Ovo','san-serif';
+}
