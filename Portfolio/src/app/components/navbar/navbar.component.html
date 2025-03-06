@@ -1,0 +1,46 @@
+<div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
+    <img src="assets/header-bg-color.png" alt="image" class="w-full">
+</div>
+
+<nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
+    <a href="#top">
+        <img src="assets/logo.png" alt="Logo" class="w-28 cursor-pointer mr-14">
+    </a>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50">
+        <li><a href="/">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/work">My Work</a></li>
+        <li><a href="/contact">Contact Me</a></li>
+    </ul>
+
+    <div class="flex items-center gap-4">
+        <button><img src="assets/moon_icon.png" class="w-8" alt="moon"></button>
+        <a href="#contact" class="hidden lg:flex items-center gap-3 px-5 py-2 border border-gray-500 rounded-full ml-4">
+            Contact <img src="assets/arrow-icon.png" alt="" class="w-3">
+        </a>
+
+        <!-- Menu Button for Mobile -->
+        <button (click)="toggleMenu()" class="block md:hidden ml-3">
+            <img src="assets/menu-black.png" alt="menu" class="w-6">
+        </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <ul [style.right]="menuOpen ? '0px' : '-250px'"
+        class="flex md:hidden flex-col gap-4 py-20 px-10 fixed top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition-all duration-500">
+
+        <!-- Close Button -->
+        <div (click)="toggleMenu()" class="absolute right-6 top-6 cursor-pointer">
+            <img src="assets/close-black.png" class="w-5" alt="close">
+        </div>
+
+        <li><a href="/" (click)="toggleMenu()">Home</a></li>
+        <li><a href="/about" (click)="toggleMenu()">About</a></li>
+        <li><a href="/services" (click)="toggleMenu()">Services</a></li>
+        <li><a href="/work" (click)="toggleMenu()">My Work</a></li>
+        <li><a href="/contact" (click)="toggleMenu()">Contact Me</a></li>
+    </ul>
+</nav>
