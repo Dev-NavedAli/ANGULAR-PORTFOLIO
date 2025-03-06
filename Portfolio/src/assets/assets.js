@@ -112,6 +112,6 @@ export const serviceData = [
 //     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
 // ];
 
-export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
-];
+// export const toolsData = [
+//     assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+// ];

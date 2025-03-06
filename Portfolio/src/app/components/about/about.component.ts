@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { infoList } from './infoList';
+import { toolsData } from './infoList';
 
 
 @Component({
@@ -11,5 +12,6 @@ import { infoList } from './infoList';
 export class AboutComponent {
 
   infoList =  infoList;
+  toolsData = toolsData
 
 }
