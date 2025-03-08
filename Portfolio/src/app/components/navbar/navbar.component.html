@@ -3,14 +3,15 @@
 </div>
 
 <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50"
-     [ngClass]="isScroll ? 'bg-white/30 backdrop-blur-lg shadow-sm' : ''">
+    [ngClass]="isScroll ? 'bg-white/30 backdrop-blur-lg shadow-sm' : ''">
 
     <a href="#top">
         <img src="assets/logo.png" alt="Logo" class="w-28 cursor-pointer mr-14">
     </a>
 
     <!-- Desktop Menu -->
-    <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50">
+    <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50"
+        [ngClass]="isScroll ? '' : 'bg-white/30 backdrop-blur-lg shadow-sm' ">
         <li><a href="/">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="/services">Services</a></li>
@@ -39,9 +40,9 @@
         </div>
 
         <li><a href="/" (click)="toggleMenu()">Home</a></li>
-        <li><a href="/about" (click)="toggleMenu()">About</a></li>
-        <li><a href="/services" (click)="toggleMenu()">Services</a></li>
-        <li><a href="/work" (click)="toggleMenu()">My Work</a></li>
-        <li><a href="/contact" (click)="toggleMenu()">Contact Me</a></li>
+        <li><a href="#about" (click)="toggleMenu()">About</a></li>
+        <li><a href="#services" (click)="toggleMenu()">Services</a></li>
+        <li><a href="#work" (click)="toggleMenu()">My Work</a></li>
+        <li><a href="#contact" (click)="toggleMenu()">Contact Me</a></li>
     </ul>
 </nav>
