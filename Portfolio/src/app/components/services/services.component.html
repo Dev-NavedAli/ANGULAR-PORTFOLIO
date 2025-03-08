@@ -1,0 +1,25 @@
+<div class="w-full px-[12%] py-10 scroll-mt-20 " id="services">
+    <h4 style="font-family: Ovo;" class="text-center mb-2 text-lg">
+        What I Offer
+    </h4>
+    <h2 style="font-family: Ovo;" class="text-center text-5xl">
+        My Services
+    </h2>
+    <p class="text-center mx-auto mb-12 mt-5 max-w-2xl" style="font-family: Ovo;">
+        I am Full stack developer with very high efficient profiency in skills .Throughout my career, I have had
+        the provilage of collaborating with prestigious organizations, contributing to thier success and growth
+    </p>
+    <div class="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-6 my-10">
+        @for(service of services; track service){
+        <div class="border border-gray-400 rounded-lg px-8 py-12  cursor-pointer hover:bg-red-100 hover:-translate-y-1 duration-500">
+            <img src={{service.icon}} alt="{{ service.title }}" class="w-10">
+            <h3  class="text-lg my-4 text-gray-700">{{ service.title }}</h3>
+            <p class="text-sm text-gray-600 leading-5">{{ service.description }}</p>
+            <a class="flex items-center gap-2 text-sm mt-5" href={{service.link}}>Read More <img src="assets/right-arrow.png" class="w-4" alt=""></a>
+        </div>
+
+        }
+
+    </div>
+
+</div>
