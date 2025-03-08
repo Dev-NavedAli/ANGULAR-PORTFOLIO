@@ -2,7 +2,9 @@
     <img src="assets/header-bg-color.png" alt="image" class="w-full">
 </div>
 
-<nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
+<nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50"
+     [ngClass]="isScroll ? 'bg-white/30 backdrop-blur-lg shadow-sm' : ''">
+
     <a href="#top">
         <img src="assets/logo.png" alt="Logo" class="w-28 cursor-pointer mr-14">
     </a>
@@ -15,7 +17,6 @@
         <li><a href="/work">My Work</a></li>
         <li><a href="/contact">Contact Me</a></li>
     </ul>
-
     <div class="flex items-center gap-4">
         <button><img src="assets/moon_icon.png" class="w-8" alt="moon"></button>
         <a href="#contact" class="hidden lg:flex items-center gap-3 px-5 py-2 border border-gray-500 rounded-full ml-4">
