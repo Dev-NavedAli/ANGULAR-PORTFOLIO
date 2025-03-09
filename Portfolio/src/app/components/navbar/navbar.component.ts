@@ -18,7 +18,6 @@ export class NavbarComponent {
   @HostListener('window:scroll',[])
   onWindowScroll(){
     if(window.scrollY > 50){
-      console.log('user Scrolled by 50 or above');
       this.isScroll = true;
     }else{
       this.isScroll = false;
