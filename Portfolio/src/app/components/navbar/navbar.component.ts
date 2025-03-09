@@ -12,7 +12,6 @@ export class NavbarComponent {
 
   toggleMenu() {
     this.menuOpen = !this.menuOpen; // Toggles between true and false
-    console.log('Menu state:', this.menuOpen); // Debugging log
   }
 
   @HostListener('window:scroll',[])
